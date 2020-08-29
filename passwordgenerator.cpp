@@ -4,7 +4,6 @@
 std::string PasswordGenerator::generate()
 {
 	std::string temp{};
-	shuffleAlphabet();
 	for (int i{}; i < m_length; ++i)
 	{
 		temp += m_alphabet[m_roll(m_mt)];
