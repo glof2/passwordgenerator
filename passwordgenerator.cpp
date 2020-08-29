@@ -15,3 +15,13 @@ void PasswordGenerator::shuffleAlphabet()
 {
 	std::random_shuffle(m_alphabet.begin(), m_alphabet.end());
 }
+
+void PasswordGenerator::changeLength(const unsigned int length)
+{
+	m_lenght{length};
+}
+
+void PasswordGenerator::changeAlphabet(const std::string& alphabet)
+{
+	m_alphabet = alphabet
+}
